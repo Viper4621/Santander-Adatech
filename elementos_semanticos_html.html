@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tags semanticas para formação html</title>
+    <!-- estrutura padrão termos semantico para mecanismo de busca qualquer estilização apenas com css-->
+</head>
+<body>
+    <header>
+        <nav>barra de navegação</nav>
+    </header>
+
+    <main>
+        <section id="about-me">Sobre mim
+            <!-- figure para imagens e por questão semantica e rankeamento -->
+            <figure><img src="https://avatars.githubusercontent.com/u/170248630?v=4" alt="foto perfil github erick silva">
+                <!-- figcaption tambem questão de semantica -->
+            <figcaption>Foto de perfil github aluno erick luciano</figcaption></figure>
+        </section>
+        <section id="socials">redes sociais</section>
+        <section id="call-me"><article>
+            <!-- dentro da tag article que e bem usada para posts e blogs podemos criar um novo scope e reutilizar as tags html -->
+            <header>exemplo imagem de capa</header>
+            <main>subtitulo da imagem </main>
+            <footer>quem postou</footer>
+        </article></section>
+    </main>
+
+    <aside>
+        conteudo lateral
+    </aside>
+
+    <footer>Desenvolvido por erick luciano</footer>
+</body>
+</html>
