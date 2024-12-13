@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <main>
+        <h1>formulario</h1>
+        <br>
+        <form action="" method="get">
+            <div>
+                <!-- caixa de texto = text / label for = para linkar id a quem recebe ele -->
+                <label for="texto">Nome:</label>
+                <!-- placeholder="Informe seu nome" -->
+                <!-- value = oq desejar no campo input  value="qualquer coisa"-->
+                <!-- name = para utilizar em js para ele saber como identificar cada campo -->
+                <!-- estamos usando um exemplo falho de submit pois ele manda na requisção se tiver login senha não e boa temos que usar post não get -->
+                <input type="text" id="texto" name="texto">
+            </div>
+            <br>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label for="data">Data de hoje:</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <br>
+            <div>
+                <label for="hora">Horario</label>
+                <input type="time" id="horario" name="horario">
+            </div>
+            <br>
+            <div>
+                <label for="arquivo">selecione um arquivo</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <br>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" id="cor" name="cor">
+            </div>
+            <br>
+            <div>
+                <!-- radio mais de 1 estrutura basica só deixa selecionar 1 -->
+                <label for="opções">Opções</label>
+                <input type="radio" id="range" name="range">
+                <label for="opções">Opções</label>
+                <input type="radio" id="range" name="range">
+                <label for="opções">Opções</label>
+                <input type="radio" id="range" name="range">
+            </div>
+            <br>
+            <div>
+                <label for="range">range</label>
+                <!-- value e max começa em 100 max 200 para deixar barra em um padrão -->
+                <input type="range" id="range" name="range" value="100" max="200">
+            </div>
+            <br>
+            <div>
+                <!-- checkbox deixa selecionar varias caixa  -->
+                <label for="checkbox">checkbox</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">checkbox</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">checkbox</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+            <br>
+            <div>
+                <label for="reset">reset</label>
+                <!-- value para mudar por padrão a qualquer texto  -->
+                <input type="reset" id="reset" name="reset" value="resetaaaaaaaaaaaaaaaaaaaaaaa">
+            </div>
+            <br>
+            <div>
+                <!-- text area completo cols e rows -->
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <!-- <label for="submit">Enviar</label> não faz sentido dar label -->
+                <!-- envia por meio de action pode ter method que é metodo http geralmente usa get padrão então no form da um action -->
+                <input type="submit">
+            </div>
+            <br>
+            <div>
+                <select name="select" id="select">
+                    <!-- select + selectpara no caso de um submit enviar dado de acordo com o dado selecionado de value -->
+                     <!-- neste caso abaixo podemos colocar como placeholder com disabled para não habilitar a seleção -->
+                      <!-- no casoslected para deixar ela já padronizada como selecionada para que não possa ser uma opção de escolha
+                     <option value="" disabled selected>Selecione uma das opções</option>
+                    <option value="abroba">abroba</option>
+                    <option value="baxaqui">baxaqui</option>
+                    <option value="dioca">dioca</option>
+                </select>
+            </div>
+           
+        </form>
+    </main>
+
+</body>
+
+</html>
