@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+    /* em caso para usar medidas relativas e responsividade ideal usar no root */
+    /* usar rem pois ele respeita o root */
+    /* em redefine tudo em caso de você ter uma div pai e só funciona se tiver um elemento pai e faz alguma alteração o rem não */
+    /* vh visao da pagina */
+
+}
+
+h1{
+    color: #ff0000;
+    font-size: 80px;
+    font-weight: 900;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 9.5rem;
+}
+
+p{
+    text-align: justify;
+    color: blue;
+    font-family: "Inter", serif;
+
+}
+.bg{
+    background-color: aqua;
+    height: 500px;
+    width: 100%;
+    background-image: url('https://plus.unsplash.com/premium_photo-1690522330763-7cdc0f1eecc4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a{
+    font-size: 2.5em;
+    color: red;
+}
+
+a:visited{
+    color: darkgreen;
+}
+/* como temos visited o hover tem que ir por ultimo e active caso tivermos tambem para evitar erro de interpretação */
+a:hover{
+    color: coral;
+}
